@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Pancakes",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908__340.jpg",
+      "price": "$5"
+    },
+    {
+      "id": "2",
+      "name": "Burger",
+      "imgUrl": "https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg",
+      "price": "$10"
+    },
+    {
+      "id": "3",
+      "name": "Cake",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552__340.jpg",
+      "price": "$10"
+    },
+    {
+      "id": "4",
+      "name": "Coffee",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/08/07/22/57/coffee-2608864__340.jpg",
+      "price": "$5"
+    },
+    {
+      "id": "5",
+      "name": "Kebab",
+      "imgUrl": "https://cdn.pixabay.com/photo/2014/08/14/14/21/shish-kebab-417994__340.jpg",
+      "price": "$15"
+    },
+    {
+      "id": "6",
+      "name": "Popcorn",
+      "imgUrl": "https://cdn.pixabay.com/photo/2015/12/09/17/12/popcorn-1085072_960_720.jpg",
+      "price": "$3"
+    },
+    {
+      "id": "7",
+      "name": "Beef BBQ",
+      "imgUrl": "https://cdn.pixabay.com/photo/2016/03/05/23/02/barbecue-1239434_960_720.jpg",
+      "price": "$25"
+    },
+    {
+      "id": "8",
+      "name": "Orange Juice",
+      "imgUrl": "https://cdn.pixabay.com/photo/2016/08/23/15/52/fresh-orange-juice-1614822__340.jpg",
+      "price": "$5"
+    },
+    {
+      "id": "9",
+      "name": "Bread roll",
+      "imgUrl": "https://cdn.pixabay.com/photo/2016/03/26/18/23/bread-1281053__340.jpg",
+      "price": "$3"
+    },
+    {
+      "id": "10",
+      "name": "Pasta",
+      "imgUrl": "https://cdn.pixabay.com/photo/2016/06/17/19/10/pasta-1463930__340.jpg",
+      "price": "$18"
+    },
+    {
+      "id": "11",
+      "name": "Chocolate Cake",
+      "imgUrl": "https://cdn.pixabay.com/photo/2015/12/08/00/42/cupcakes-1081963__340.jpg",
+      "price": "$15"
+    },
+    {
+      "id": "12",
+      "name": "Milk",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_960_720.jpg",
+      "price": "$5"
+    },
+    {
+      "id": "13",
+      "name": "Jolof Rice",
+      "imgUrl": "https://cdn.pixabay.com/photo/2014/01/09/10/14/kimchi-fried-rice-241051__340.jpg",
+      "price": "$20"
+    },
+    {
+      "id": "14",
+      "name": "Pizza",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/01/22/19/20/pizza-2000615__340.jpg",
+      "price": "$10"
+    },
+    {
+      "id": "15",
+      "name": "Doughnut",
+      "imgUrl": "https://cdn.pixabay.com/photo/2019/05/11/17/08/donuts-4196093__340.jpg",
+      "price": "$8"
+    }
+  ]
+}
