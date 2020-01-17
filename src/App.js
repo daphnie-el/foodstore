@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./css/App.css";
 import Store from "./container/Store";
 import Cart from "./container/Cart";
 //import cartItems from "./container/cartItems";
@@ -13,19 +13,26 @@ class App extends React.Component {
   }
   addToCart = (id, productName, productPrice, img) => {
     const _items = this.state.cartItems.slice();
-    if (_items.findIndex((item) => item.id === id) !== -1) {
-      return
+    //index can either be 0 or -1
+    let index = _items.findIndex(item => item.id === id)
+    if (index > -1) {
+      let count = _items[index].count;
+      count++;
+      _items[index].count = count;
+      this.setState({cartItems : [..._items]})
+    } else {
+      _items.push({
+        id,
+        productName,
+        productPrice,
+        img,
+        count: 1,
+      });
+      this.setState({
+        cartItems: _items,
+      });
+
     }
-    _items.push({
-      id,
-      productName,
-      productPrice,
-      img,
-      count: 1,
-    });
-    this.setState({
-      cartItems: _items,
-    });
   };
 
   increment = (id) => {
@@ -66,6 +73,12 @@ class App extends React.Component {
     this.setState({
       cartItems: _items
     });
+  };
+
+  emptyCart = () => {
+    this.setState({
+      cartItems: []
+    });
   }
   //react doesnt accept common array methods in its setstate method. spread operators are used instead to denote the former state then
 
@@ -74,7 +87,19 @@ class App extends React.Component {
     return (
       <div className="App">
         <Store addToCart={this.addToCart} />
-        <Cart cartItems={this.state.cartItems} increment={this.increment} decrement={this.decrement} />
+        < Cart cartItems = {
+          this.state.cartItems
+        }
+        increment = {
+          this.increment
+        }
+        decrement = {
+          this.decrement
+        }
+        emptyCart = {
+          this.emptyCart
+        }
+        / >
       </div>
     );
   }

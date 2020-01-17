@@ -1,23 +1,29 @@
 import React from 'react';
-import '../container/cart.css';
+import '../css/cart.css';
 
 const Purchase = ({ increment, decrement, cartItems }) => {
 
-        return (
+    return (
         <div>
         {cartItems.map(cartItem => {
             return (
                 <div className="purchase">
-                    <img src={cartItem.img} alt={cartItem.productName} width="100" />
-                    <p>{cartItem.productPrice}</p>
-                    <p>{cartItem.productName}</p>
-                    <p>{cartItem.count}</p>
-                    <button onClick={() => increment(cartItem.id)}> + </button>
-                    <button onClick={() => decrement(cartItem.id)}> - </button>
+                    <img src={cartItem.img} alt={cartItem.productName} width="75" />
+                    <div className="purchase-info">
+                        <li id="name">
+                            <span style={{ color: "#000" }}>
+                                {cartItem.productName}
+                            </span>
+                        </li>
+                        <button onClick={() => decrement(cartItem.id)}> - </button>
+                        <button disabled>{cartItem.count}</button>                        
+                        <button onClick={() => increment(cartItem.id)}> + </button>
+                        <span id="product-price">${cartItem.productPrice}</span>
+                    </div>
                 </div>
             )})
         }
-        <p>Items in cart: { cartItems.length }</p>
+        <p className="total">Items Total: { cartItems.length }</p>
         </div>  
     )    
 }

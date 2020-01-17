@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const Search = () => {
   return (
     <div>
-      <input placeholder="searchInput" />
+      <input placeholder="wanna eat?" />
       <FontAwesomeIcon className="fa" id="search" icon={faSearch} />
     </div>
   );

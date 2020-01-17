@@ -5,6 +5,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
   /* height: 10vh; */
 }
 
@@ -18,6 +19,7 @@ input {
   padding: 10px;
   height: 10px;
   border: none;
+  width: 300px;
 }
 
 .dropdown {
@@ -67,7 +69,8 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #e5e5e5;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 .product {
@@ -92,6 +95,7 @@ input {
 .store {
   border: 1px solid #e5e5e5;
   border-top: none;
+  background-color: #e5e5e5;
 }
 
 .add {

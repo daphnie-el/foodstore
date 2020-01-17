@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../component/Navbar";
-import ItemList from "./ItemList";
-import "../component/styles.css";
+import ItemList from "../component/ItemList";
+import "../css/styles.css";
 import { products } from "../db.json";
 import Search from "../component/search";
 
@@ -30,7 +30,7 @@ class Store extends Component {
           <Search onChange={this.onSearchChange} />
         </Navbar>
         <ItemList products={searchResult} addToCart={this.props.addToCart} />
-        {this.props.children}
+        {/* {this.props.children} */}
       </div>
     );
   }
