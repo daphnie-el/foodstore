@@ -34,7 +34,7 @@ class App extends React.Component {
 
     }
   };
-
+//method to increase and reduce the products
   increment = (id) => {
     // create a clone of the cartItems in state using slice()
     const _items = this.state.cartItems.slice();
@@ -80,10 +80,25 @@ class App extends React.Component {
       cartItems: []
     });
   }
-  //react doesnt accept common array methods in its setstate method. spread operators are used instead to denote the former state then
+
+  //method to find total price of cart items
+  // findTotal = (x) => {
+  //   const _items = this.state.cartItems;
+  //   _items.reduce(x);
+  // }
+  //method to remove individual items from cart
+  //react doesnt accept common array methods in its setstate method. ssplice pread operators are used instead to denote the former state then
+removeFromCart= (id) => {
+  const _items = this.state.cartItems
+  const itemIndex = _items.findIndex((item) => item.id === id);
+  _items.splice(itemIndex, 1);
+  this.setState({
+    cartItems: _items
+  });
+}
+
 
   render() {
-    console.log(this.state.cartItems);
     return (
       <div className="App">
         <Store addToCart={this.addToCart} />
@@ -99,7 +114,11 @@ class App extends React.Component {
         emptyCart = {
           this.emptyCart
         }
-        / >
+        removeFromCart = {
+          this.removeFromCart
+        }
+        // findTotal={this.findTotal}
+        />
       </div>
     );
   }

@@ -17,14 +17,12 @@ h1 {
 }
 
 .purchase {
-  height: auto;
-  padding: 15px;
+  padding: 1em;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #e5e5e5;
-  
-
 }
+
 .purchase-info{
   margin-left: 1em;
   line-height: 1.5em;
@@ -34,15 +32,33 @@ h1 {
   border: 1px solid #3bb9ff;
 }
 
+.purchase-info button:disabled {
+ background-color: rgba(173, 216, 230, 0.1);
+}
+
 #product-price {
   font-weight: 900;
   font-size: 0.9em;
   margin-left: 2.5em;
 }
 
-#name {
+.name {
   list-style-type: square;
   color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name button {
+  border: 0;
+  background-color: transparent;
+  margin-top: -1em;
+  padding: 5px;
+  font-size: 0.7em;
+}
+
+#name.button:hover {
+  border: none;
 }
 .total {
   background-color: #add8e6;

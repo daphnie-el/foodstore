@@ -26,9 +26,8 @@ const ItemList = ({ products, addToCart }) => {
     < div className = "list" > {
     products.map((product, id) => {
     return (
-      <div>
-        <Item
-          key={id}
+      <div key={id}>
+        <Item          
           id={product.id}
           name={product.name}
           price={product.price}

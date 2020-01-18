@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "../css/cart.css";
 import Purchase from '../component/purchase';
 
 
-function Cart({ cartItems, increment, decrement, emptyCart }) {
+function Cart({ cartItems, increment, decrement, emptyCart, removeFromCart }) {
     
     return (
       <div className="cart">
@@ -12,7 +12,9 @@ function Cart({ cartItems, increment, decrement, emptyCart }) {
           <Purchase 
           cartItems={ cartItems } 
           increment={ increment } 
-          decrement={ decrement } />
+          decrement={ decrement }
+          removeFromCart = { removeFromCart }
+          />
         </div>
         <div className="checkout">
           <button id = "check-btn" > Checkout </button>          

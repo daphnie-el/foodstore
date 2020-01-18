@@ -13,10 +13,9 @@ class Store extends Component {
   }
 
   onSearchChange(event) {
-    this.setState(state => ({
+    this.setState({
       searchInput: event.target.value
-    }));
-    console.log(event.target.value);
+    });
   }
 
   render() {
@@ -27,10 +26,9 @@ class Store extends Component {
     return (
       <div className="store">
         <Navbar>
-          <Search onChange={this.onSearchChange} />
+          <Search onSearchChange={this.onSearchChange} />
         </Navbar>
-        <ItemList products={searchResult} addToCart={this.props.addToCart} />
-        {/* {this.props.children} */}
+        <ItemList products={searchResult} addToCart={this.props.addToCart}  sea />
       </div>
     );
   }

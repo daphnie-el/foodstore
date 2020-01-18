@@ -87,8 +87,38 @@
     {
       "id": "15",
       "name": "Doughnut",
-      "imgUrl": "https://cdn.pixabay.com/photo/2019/05/11/17/08/donuts-4196093__340.jpg",
+      "imgUrl": "https://images.unsplash.com/photo-1527904324834-3bda86da6771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "price": "5"
+    },
+    {
+      "id": "16",
+      "name": "Fried Chicken",
+      "imgUrl": "https://cdn.pixabay.com/photo/2019/09/26/18/23/republic-of-korea-4506696__340.jpg",
       "price": "8"
+    },
+    {
+      "id": "17",
+      "name": "Soda",
+      "imgUrl": "https://images.unsplash.com/photo-1527960471264-932f39eb5846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "price": "3"
+    },
+    {
+      "id": "18",
+      "name": "French Fries",
+      "imgUrl": "https://images.unsplash.com/photo-1565290538967-a18f519b6cae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "price": "5"
+    },
+    {
+      "id": "19",
+      "name": "Fruit Shakes",
+      "imgUrl": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "price": "20"
+    },
+    {
+      "id": "20",
+      "name": "Sausages",
+      "imgUrl": "https://cdn.pixabay.com/photo/2017/03/08/20/04/sausage-2127682__340.jpg",
+      "price": "4"
     }
   ]
 }
