@@ -83,11 +83,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-#check-btn:hover{
-   background-color: #fff;
-   color: green;
-}
-
 #hold {
   color: #3bb9ff;
   border: 1px solid #3bb9ff;
