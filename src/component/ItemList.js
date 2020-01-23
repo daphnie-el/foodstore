@@ -1,9 +1,8 @@
 import React from "react";
-import "../css/styles.css";
-// import cartItem from '../container/cartItems';
+import { List, Product } from "./storestyle";
 const Item = ({ id, name, price, imgUrl, addToCart }) => {
   return (
-    <figure className="card">
+    <div style={{padding: '10px'}}>
       <img
         src={imgUrl}
         alt={name}
@@ -11,19 +10,19 @@ const Item = ({ id, name, price, imgUrl, addToCart }) => {
         height="150"
         onClick={() => addToCart(id, name, price, imgUrl)}
       />
-      <figcaption className="product">
-        <li id="name">
+      <Product>
+        <li style={{listStyleType: 'square', color: 'green'}}>
           <span style={{ color: "#000" }}>{name}</span>
         </li>
-        <p id="price">${price}</p>
-      </figcaption>
-    </figure>
+        <p className="price">${price}</p>
+      </Product>
+    </div>
   );
 };
 
 const ItemList = ({ products, addToCart }) => {
   return (
-    < div className = "list" > {
+    <List> {
     products.map((product, id) => {
     return (
       <div key={id}>
@@ -38,7 +37,7 @@ const ItemList = ({ products, addToCart }) => {
     );
   })
     }
-  </div>
+  </List>
   )}
 
 export default ItemList;

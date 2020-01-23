@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../component/Navbar";
 import ItemList from "../component/ItemList";
-import "../css/styles.css";
+import { Wrapper} from '../component/storestyle'
 import { products } from "../db.json";
 import Search from "../component/search";
 
@@ -24,12 +24,12 @@ class Store extends Component {
       return product.name.toLowerCase().includes(searchInput.toLowerCase());
     });
     return (
-      <div className="store">
+      <Wrapper>
         <Navbar>
           <Search onSearchChange={this.onSearchChange} />
         </Navbar>
-        <ItemList products={searchResult} addToCart={this.props.addToCart}  sea />
-      </div>
+        <ItemList products={searchResult} addToCart={this.props.addToCart} />
+      </Wrapper>
     );
   }
 }

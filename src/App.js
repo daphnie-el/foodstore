@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/App.css";
+import { AppWrapper } from './component/storestyle'
 import Store from "./container/Store";
 import Cart from "./container/Cart";
 //import cartItems from "./container/cartItems";
@@ -100,7 +100,7 @@ removeFromCart= (id) => {
 
   render() {
     return (
-      <div className="App">
+      <AppWrapper>
         <Store addToCart={this.addToCart} />
         < Cart cartItems = {
           this.state.cartItems
@@ -119,7 +119,7 @@ removeFromCart= (id) => {
         }
         // findTotal={this.findTotal}
         />
-      </div>
+      </AppWrapper>
     );
   }
 }

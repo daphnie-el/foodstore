@@ -1,27 +1,3 @@
-.store {
-  width: 75%;
-}
-/* Navigation bar styling */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  /* height: 10vh; */
-}
-
-#header-text {
-  margin: 0;
-  padding: 10px;
-  font-size: 1em;
-}
-
-input {
-  padding: 10px;
-  height: 10px;
-  border: none;
-  width: 300px;
-}
-
 .dropdown {
   border: none;
   color: #000;
@@ -42,7 +18,6 @@ input {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
 .fa {
   padding: 10px;
   color: rgba(0, 0, 0, 0.2);
@@ -56,50 +31,7 @@ input {
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.8);
 }
-
-/* items and list styling */
-
 .card img {
   border-radius: 5px;
   cursor: pointer;
-}
-
-.list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 90vh;
-  overflow-y: scroll;
-}
-
-.product {
-  line-height: 5px;
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: 1em;
-  padding-top: 5px;
-}
-
-#price {
-  font-weight: 900;
-  font-size: 0.9em;
-  margin-bottom: 15px;
-}
-
-#name {
-  list-style-type: square;
-  color: green;
-}
-
-.store {
-  border: 1px solid #e5e5e5;
-  border-top: none;
-  background-color: #e5e5e5;
-}
-
-.add {
-  background-color: rgba(255, 192, 203, 0.7);
-  padding: 10px;
-  border: 1px solid rgb(255, 192, 203);
 }

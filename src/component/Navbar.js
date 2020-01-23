@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Nav, Header } from "./storestyle";
 import "../css/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUtensils, faCog } from "@fortawesome/free-solid-svg-icons";
@@ -22,7 +23,7 @@ class Navbar extends Component {
   render() {
     if (this.state.visibility) {
       return (
-        <div className="navbar" style={{ borderRight: "1px solid #e5e5e5" }}>
+        <Nav>
           <button className="dropdown" onClick={this.displaySidebar}>
             &#9776;
           </button>
@@ -31,19 +32,19 @@ class Navbar extends Component {
             <FontAwesomeIcon className="fa" icon={faStar} />
             <FontAwesomeIcon className="fa" icon={faCog} />
           </div>
-          <h5 id="header-text">Food Items</h5>
+          <Header>Food Items</Header>
           {this.props.children}
-        </div>
+        </Nav>
       );
     } else {
       return (
-        <div className="navbar" style={{ borderRight: "1px solid #e5e5e5" }}>
+        <Nav>
           <button className="dropdown" onClick={this.displaySidebar}>
             &#9776;
           </button>
-          <h5 id="header-text">Food Items</h5>
+          <Header>Food Items</Header>
           {this.props.children}
-        </div>
+        </Nav>
       );
     }
   }
